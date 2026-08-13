@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
 
-/* =========================
+/* ==============================
    RESET
-========================= */
+============================== */
 
 * {
     margin: 0;
@@ -13,9 +13,9 @@
 }
 
 
-/* =========================
-   CORES
-========================= */
+/* ==============================
+   VARIÁVEIS
+============================== */
 
 :root {
     --cor-fundo: #0d0d12;
@@ -26,9 +26,9 @@
 }
 
 
-/* =========================
+/* ==============================
    BODY
-========================= */
+============================== */
 
 body {
     font-family:
@@ -38,14 +38,16 @@ body {
         serif;
 
     background-color: var(--cor-fundo);
+
     color: #9090a8;
+
     line-height: 1.8;
 }
 
 
-/* =========================
+/* ==============================
    TELA DE ENTRADA
-========================= */
+============================== */
 
 .tela-entrada {
     position: fixed;
@@ -67,9 +69,11 @@ body {
         );
 
     display: flex;
+
     flex-direction: column;
 
     align-items: center;
+
     justify-content: center;
 
     z-index: 9999;
@@ -82,14 +86,16 @@ body {
 
 .tela-entrada.oculta {
     opacity: 0;
+
     transform: translateY(-100%);
+
     pointer-events: none;
 }
 
 
-/* =========================
+/* ==============================
    MOLDURA
-========================= */
+============================== */
 
 .capa-moldura {
     border: 4px solid;
@@ -111,9 +117,9 @@ body {
     position: relative;
 
     box-shadow:
-        inset 0 0 100px rgba(5, 8, 15, .9),
-        inset 0 0 200px rgba(0, 0, 0, .6),
-        0 0 60px rgba(15, 30, 64, .3);
+        inset 0 0 100px rgba(5,8,15,.9),
+        inset 0 0 200px rgba(0,0,0,.6),
+        0 0 60px rgba(15,30,64,.3);
 
     max-width: 90%;
 }
@@ -138,9 +144,9 @@ body {
 }
 
 
-/* =========================
+/* ==============================
    TÍTULO
-========================= */
+============================== */
 
 .capa-titulo {
     font-family: 'UnifrakturMaguntia', serif;
@@ -152,8 +158,8 @@ body {
     color: var(--cor-prata);
 
     text-shadow:
-        0 0 15px rgba(192, 200, 224, .35),
-        0 0 30px rgba(26, 48, 96, .6);
+        0 0 15px rgba(192,200,224,.35),
+        0 0 30px rgba(26,48,96,.6);
 
     margin: 1.5rem 0;
 }
@@ -172,11 +178,12 @@ body {
 }
 
 
-/* =========================
+/* ==============================
    BOTÃO ENTRAR
-========================= */
+============================== */
 
 .botao-entrar {
+
     font-family: 'UnifrakturMaguntia', serif;
 
     font-size: 1.2rem;
@@ -188,8 +195,8 @@ body {
     background:
         linear-gradient(
             180deg,
-            rgba(26, 48, 96, .4),
-            rgba(15, 30, 64, .3)
+            rgba(26,48,96,.4),
+            rgba(15,30,64,.3)
         );
 
     border: 2px solid #405880;
@@ -203,11 +210,12 @@ body {
 
 
 .botao-entrar:hover {
+
     background:
         linear-gradient(
             180deg,
-            rgba(26, 48, 96, .6),
-            rgba(15, 30, 64, .4)
+            rgba(26,48,96,.6),
+            rgba(15,30,64,.4)
         );
 
     border-color: var(--cor-prata);
@@ -216,11 +224,12 @@ body {
 }
 
 
-/* =========================
+/* ==============================
    CONTEÚDO
-========================= */
+============================== */
 
 .conteudo {
+
     opacity: 0;
 
     transform: translateY(30px);
@@ -232,17 +241,19 @@ body {
 
 
 .conteudo.visivel {
+
     opacity: 1;
 
     transform: translateY(0);
 }
 
 
-/* =========================
+/* ==============================
    HEADER
-========================= */
+============================== */
 
 header {
+
     background:
         linear-gradient(
             180deg,
@@ -276,6 +287,7 @@ header {
 
 
 header h1 {
+
     font-family: 'UnifrakturMaguntia', serif;
 
     font-size: 2.3rem;
@@ -285,6 +297,7 @@ header h1 {
 
 
 header p {
+
     font-style: italic;
 
     color: #707890;
@@ -293,11 +306,12 @@ header p {
 }
 
 
-/* =========================
+/* ==============================
    ABAS
-========================= */
+============================== */
 
 .abas {
+
     display: flex;
 
     flex-wrap: wrap;
@@ -326,6 +340,7 @@ header p {
 
 
 .aba-btn {
+
     font-family: 'UnifrakturMaguntia', serif;
 
     font-size: .88rem;
@@ -345,6 +360,7 @@ header p {
     cursor: pointer;
 
     border-top-left-radius: 8px;
+
     border-top-right-radius: 8px;
 
     transition: all .4s ease;
@@ -352,22 +368,24 @@ header p {
 
 
 .aba-btn:hover {
+
     color: var(--cor-prata);
 
     border-color: #405880;
 
-    background: rgba(64, 88, 128, .1);
+    background: rgba(64,88,128,.1);
 }
 
 
 .aba-btn.ativa {
+
     color: var(--cor-prata);
 
     background:
         linear-gradient(
             180deg,
-            rgba(64, 88, 128, .25),
-            rgba(48, 56, 80, .15)
+            rgba(64,88,128,.25),
+            rgba(48,56,80,.15)
         );
 
     border-color: #6078a0;
@@ -380,12 +398,13 @@ header p {
 }
 
 
-/* =========================
+/* ==============================
    CONTAINER
-========================= */
+============================== */
 
 .container {
-    max-width: 950px;
+
+    max-width: 1000px;
 
     margin: 0 auto;
 
@@ -393,11 +412,12 @@ header p {
 }
 
 
-/* =========================
+/* ==============================
    ABAS DE CONTEÚDO
-========================= */
+============================== */
 
 .conteudo-aba {
+
     display: none;
 
     animation: surgir .6s ease forwards;
@@ -405,6 +425,7 @@ header p {
 
 
 .conteudo-aba.visivel {
+
     display: block;
 }
 
@@ -424,11 +445,12 @@ header p {
 }
 
 
-/* =========================
-   CAIXA DO REINO
-========================= */
+/* ==============================
+   REINO
+============================== */
 
 .reino-caixa {
+
     border: 3px solid;
 
     border-radius: 12px;
@@ -436,24 +458,26 @@ header p {
     padding: 2.5rem;
 
     box-shadow:
-        inset 0 0 80px rgba(0, 0, 0, .5),
-        0 0 40px rgba(0, 0, 0, .3);
+        inset 0 0 80px rgba(0,0,0,.5),
+        0 0 40px rgba(0,0,0,.3);
 }
 
 
 .reino-cabecalho {
+
     text-align: center;
 
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     padding-bottom: 1.5rem;
 
     border-bottom:
-        1px dashed rgba(255, 255, 255, .15);
+        1px dashed rgba(255,255,255,.15);
 }
 
 
 .reino-nome {
+
     font-family: 'UnifrakturMaguntia', serif;
 
     font-size: 2.5rem;
@@ -465,6 +489,7 @@ header p {
 
 
 .reino-lugar {
+
     font-size: 1.05rem;
 
     font-style: italic;
@@ -476,84 +501,97 @@ header p {
 
 
 .reino-tema {
+
     font-size: 1.1rem;
 
     font-style: italic;
 }
 
 
-/* =========================
-   IMAGEM
-========================= */
-
-.reino-img {
-    width: 100%;
-
-    height: 220px;
-
-    border-radius: 8px;
-
-    margin-bottom: 2rem;
-
-    background-size: cover;
-
-    background-position: center;
-
-    border: 2px solid rgba(255, 255, 255, .15);
-}
-
-
-/* =========================
+/* ==============================
    TÓPICOS
-========================= */
+============================== */
 
 .topicos {
-    display: grid;
 
-    grid-template-columns:
-        repeat(
-            auto-fill,
-            minmax(280px, 1fr)
-        );
+    display: flex;
 
-    gap: .8rem;
+    flex-direction: column;
+
+    gap: 2rem;
 }
 
 
 .topico {
-    padding: .7rem 1rem;
 
-    border-radius: 6px;
+    display: flex;
 
-    background: rgba(0, 0, 0, .25);
+    align-items: center;
 
-    border-left: 3px solid;
+    gap: 1.5rem;
+
+    padding: 1.2rem;
+
+    border-radius: 10px;
+
+    background: rgba(0,0,0,.25);
+
+    border-left: 4px solid;
 
     transition: .3s;
 }
 
 
 .topico:hover {
-    background: rgba(255, 255, 255, .05);
+
+    background: rgba(255,255,255,.05);
 
     transform: translateX(5px);
 }
 
 
+.topico-img {
+
+    width: 140px;
+
+    height: 100px;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    border: 2px solid rgba(255,255,255,.15);
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.topico-texto {
+
+    flex: 1;
+}
+
+
 .topico-num {
+
     font-weight: bold;
 
     margin-right: .5rem;
 
     opacity: .6;
+
+    font-size: 1.1rem;
 }
 
 
-/* =========================
-   CORES DOS REINOS
-========================= */
+/* ==============================
+   REINO EMILY
+============================== */
 
 .emily {
+
     background:
         linear-gradient(
             180deg,
@@ -567,7 +605,14 @@ header p {
 }
 
 
-.emily .reino-img {
+.emily .topico {
+
+    border-left-color: #7098d0;
+}
+
+
+.emily .topico-img {
+
     filter:
         sepia(20%)
         contrast(85%)
@@ -577,14 +622,12 @@ header p {
 }
 
 
-.emily .topico {
-    border-left-color: #7098d0;
-}
-
-
-/* PAMELA */
+/* ==============================
+   REINO PAMELA
+============================== */
 
 .pamela {
+
     background:
         linear-gradient(
             180deg,
@@ -598,7 +641,14 @@ header p {
 }
 
 
-.pamela .reino-img {
+.pamela .topico {
+
+    border-left-color: #70a0ff;
+}
+
+
+.pamela .topico-img {
+
     filter:
         sepia(15%)
         contrast(90%)
@@ -608,14 +658,12 @@ header p {
 }
 
 
-.pamela .topico {
-    border-left-color: #70a0ff;
-}
-
-
-/* JÉSSICA */
+/* ==============================
+   REINO JÉSSICA
+============================== */
 
 .jessica {
+
     background:
         linear-gradient(
             180deg,
@@ -630,13 +678,28 @@ header p {
 
 
 .jessica .topico {
+
     border-left-color: #b070e0;
 }
 
 
-/* JULIA */
+.jessica .topico-img {
+
+    filter:
+        sepia(30%)
+        contrast(80%)
+        brightness(43%)
+        saturate(60%)
+        hue-rotate(260deg);
+}
+
+
+/* ==============================
+   REINO JULIA
+============================== */
 
 .julia {
+
     background:
         linear-gradient(
             180deg,
@@ -651,13 +714,28 @@ header p {
 
 
 .julia .topico {
+
     border-left-color: #60b0a0;
 }
 
 
-/* OTÁVIO */
+.julia .topico-img {
+
+    filter:
+        sepia(25%)
+        contrast(85%)
+        brightness(47%)
+        saturate(65%)
+        hue-rotate(170deg);
+}
+
+
+/* ==============================
+   REINO OTÁVIO
+============================== */
 
 .otavio {
+
     background:
         linear-gradient(
             180deg,
@@ -672,13 +750,28 @@ header p {
 
 
 .otavio .topico {
+
     border-left-color: #e0b040;
 }
 
 
-/* GEOVANA */
+.otavio .topico-img {
+
+    filter:
+        sepia(40%)
+        contrast(80%)
+        brightness(50%)
+        saturate(75%)
+        hue-rotate(30deg);
+}
+
+
+/* ==============================
+   REINO GEOVANA
+============================== */
 
 .geovana {
+
     background:
         linear-gradient(
             180deg,
@@ -693,15 +786,28 @@ header p {
 
 
 .geovana .topico {
+
     border-left-color: #ff8090;
 }
 
 
-/* =========================
-   RODAPÉ
-========================= */
+.geovana .topico-img {
+
+    filter:
+        sepia(35%)
+        contrast(85%)
+        brightness(53%)
+        saturate(70%)
+        hue-rotate(340deg);
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
 
 footer {
+
     text-align: center;
 
     padding: 2.5rem 2rem;
@@ -728,11 +834,11 @@ footer {
 }
 
 
-/* =========================
+/* ==============================
    RESPONSIVIDADE
-========================= */
+============================== */
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
 
     .capa-titulo {
         font-size: 1.8rem;
@@ -746,18 +852,19 @@ footer {
         font-size: 1.8rem;
     }
 
-    .reino-img {
-        height: 160px;
-    }
-
     .aba-btn {
         font-size: .75rem;
-
         padding: .5rem .6rem;
     }
 
-    .topicos {
-        grid-template-columns: 1fr;
+    .topico {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topico-img {
+        width: 100%;
+        height: 160px;
     }
 
 }

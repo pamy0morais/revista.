@@ -1,16 +1,12 @@
 // ========================================
-// OS SEIS REINOS DA SABEDORIA
-// JavaScript
-// ========================================
-
-
-// ========================================
 // TELA DE ENTRADA
 // ========================================
 
-const telaEntrada = document.getElementById("telaEntrada");
-const conteudo = document.getElementById("conteudo");
 const botaoEntrar = document.getElementById("botaoEntrar");
+
+const telaEntrada = document.getElementById("telaEntrada");
+
+const conteudo = document.getElementById("conteudo");
 
 
 botaoEntrar.addEventListener("click", entrarNoSite);
@@ -30,6 +26,7 @@ function entrarNoSite() {
 // ========================================
 
 const botoesAbas = document.querySelectorAll(".aba-btn");
+
 const conteudosAbas = document.querySelectorAll(".conteudo-aba");
 
 
@@ -40,31 +37,38 @@ botoesAbas.forEach((botao) => {
         const reinoSelecionado = botao.dataset.reino;
 
 
-        // Remove a aba ativa de todos os botões
+        // Remove a classe ativa dos botões
 
         botoesAbas.forEach((btn) => {
+
             btn.classList.remove("ativa");
+
         });
 
 
-        // Ativa o botão clicado
+        // Ativa o botão escolhido
 
         botao.classList.add("ativa");
 
 
-        // Esconde todos os conteúdos
+        // Esconde todos os reinos
 
         conteudosAbas.forEach((conteudoAba) => {
+
             conteudoAba.classList.remove("visivel");
+
         });
 
 
-        // Mostra o reino selecionado
+        // Mostra o reino escolhido
 
         const reino = document.getElementById(reinoSelecionado);
 
+
         if (reino) {
+
             reino.classList.add("visivel");
+
         }
 
     });
