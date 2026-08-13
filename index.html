@@ -4,322 +4,513 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Revista Filosófica | Sabedoria Antiga</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <title>Os Seis Reinos da Sabedoria</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header>
-        <h1>Revista Filosófica</h1>
+    <!-- TELA DE ENTRADA -->
+    <div class="tela-entrada" id="telaEntrada">
 
-        <p>
-            "Nas trevas desta vida, a sabedoria é a estrela que guia os passos da alma"
-        </p>
-    </header>
+        <div class="capa-moldura">
 
+            <h1 class="capa-titulo">
+                Os Seis Reinos
+            </h1>
 
-    <!-- NAVEGAÇÃO -->
-    <nav>
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#emily">Emily</a></li>
-            <li><a href="#pamela">Pamela</a></li>
-            <li><a href="#jessica">Jéssica</a></li>
-            <li><a href="#julia">Julia</a></li>
-            <li><a href="#otavio">Otávio</a></li>
-            <li><a href="#geovana">Geovana</a></li>
-        </ul>
-    </nav>
-
-
-    <main class="container">
-
-        <!-- DESTAQUE -->
-        <section id="inicio" class="destaque">
-
-            <h2>❧ Ao Coração que Busca ❧</h2>
-
-            <p>
-                Entrai, ó peregrino, e repousai vossa alma nestas páginas.
-                Aqui se encontram pensamentos tecidos com a tinta da reflexão
-                e o fio da eternidade. Cada nome que vedes acima é uma voz que
-                clama do silêncio. Clique e deixai que as palavras vos alcancem.
+            <p class="capa-subtitulo">
+                "Trinta ensinamentos em cada reino. Caminhai e aprendei."
             </p>
 
-        </section>
+            <button class="botao-entrar" id="botaoEntrar">
+                ⚔️ Entrai ⚔️
+            </button>
+
+        </div>
+
+    </div>
 
 
-        <!-- EMILY -->
-        <section id="emily">
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="conteudo" id="conteudo">
 
-            <h2 class="secao-titulo">❧ De Emily ❧</h2>
+        <header>
+            <h1>Os Seis Reinos da Sabedoria</h1>
 
-            <div class="grade-colunas">
+            <p>
+                "Trinta verdades em cada terra, seis reinos de sabedoria"
+            </p>
+        </header>
 
-                <article class="coluna-autor">
 
-                    <span class="cantosupdir">⚔️</span>
-                    <span class="cantoinfesq">⚔️</span>
+        <!-- ABAS -->
+        <nav class="abas">
 
-                    <h3 class="coluna-nome">Emily</h3>
+            <button class="aba-btn ativa" data-reino="emily">
+                🏔️ Montanhas
+            </button>
 
-                    <p class="coluna-tema">
-                        Da Virtude e do Caminho Reto
-                    </p>
+            <button class="aba-btn" data-reino="pamela">
+                ✨ Estrelas
+            </button>
 
-                    <div
-                        class="coluna-img"
-                        style="background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80');">
+            <button class="aba-btn" data-reino="jessica">
+                🌙 Eternidade
+            </button>
+
+            <button class="aba-btn" data-reino="julia">
+                🏛️ Cidades
+            </button>
+
+            <button class="aba-btn" data-reino="otavio">
+                ☀️ Harmonia
+            </button>
+
+            <button class="aba-btn" data-reino="geovana">
+                🌅 Aurora
+            </button>
+
+        </nav>
+
+
+        <main class="container">
+
+
+            <!-- =========================
+                 REINO DE EMILY
+            ========================== -->
+
+            <section class="conteudo-aba visivel" id="emily">
+
+                <div class="reino-caixa emily">
+
+                    <div class="reino-cabecalho">
+
+                        <h2 class="reino-nome">
+                            Emily
+                        </h2>
+
+                        <p class="reino-lugar">
+                            🏔️ Reino das Montanhas Geladas
+                        </p>
+
+                        <p class="reino-tema">
+                            Da Virtude e do Caminho Reto
+                        </p>
+
                     </div>
 
-                    <p>
-                        Examinai cada passo, pois a virtude não habita nas
-                        palavras, mas nas obras. Que vossa conduta seja espelho
-                        de vossa alma, e que o bem que fazeis brilhe como luz
-                        nas trevas, sem esperar aplausos, apenas por ser justo.
-                    </p>
-
-                    <a href="#" class="leia-mais">
-                        Ler o manuscrito →
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- PAMELA -->
-        <section id="pamela">
-
-            <h2 class="secao-titulo">❧ De Pamela ❧</h2>
-
-            <div class="grade-colunas">
-
-                <article class="coluna-autor">
-
-                    <span class="cantosupdir">⚔️</span>
-                    <span class="cantoinfesq">⚔️</span>
-
-                    <h3 class="coluna-nome">Pamela</h3>
-
-                    <p class="coluna-tema">
-                        Da Verdade Oculta e do Saber
-                    </p>
 
                     <div
-                        class="coluna-img"
-                        style="background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80');">
+                        class="reino-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80');">
                     </div>
 
-                    <p>
-                        A verdade é como estrela: não se apaga, mas nem sempre
-                        é visível. Quem crê saber tudo, nada conhece. A dúvida
-                        é a porta pela qual entramos no saber. Perguntai,
-                        buscai, e talvez encontres um raio de luz.
-                    </p>
 
-                    <a href="#" class="leia-mais">
-                        Ler o manuscrito →
-                    </a>
+                    <div class="topicos">
 
-                </article>
+                        <div class="topico">
+                            <span class="topico-num">01.</span>
+                            A virtude é o caminho mais íngreme, mas o único que leva ao cume.
+                        </div>
 
-            </div>
+                        <div class="topico">
+                            <span class="topico-num">02.</span>
+                            Quem teme o vento não conhece as alturas.
+                        </div>
 
-        </section>
+                        <div class="topico">
+                            <span class="topico-num">03.</span>
+                            A firmeza de ânimo é mais forte que a rocha.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">04.</span>
+                            Não há escada para as estrelas senão a da perseverança.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">05.</span>
+                            Quem desce ao vale perde a vista do horizonte.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">06.</span>
+                            O frio fortalece o corpo; a adversidade, a alma.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">07.</span>
+                            Cada passo em falso ensina mais que cem passos certos.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">08.</span>
+                            A paciência escala montanhas que a pressa jamais verá.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">09.</span>
+                            Quem carrega apenas o necessário caminha mais longe.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">10.</span>
+                            A altura revela o quanto ainda há por subir.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">11.</span>
+                            As raízes mais profundas resistem às maiores tempestades.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">12.</span>
+                            Não se julga o montanhista pelo início, mas pelo cume.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">13.</span>
+                            O silêncio das alturas traz sabedoria que o vale desconhece.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">14.</span>
+                            Quem se curva ao medo jamais verá o sol nascer do alto.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">15.</span>
+                            A retidão é o melhor apoio nas encostas mais perigosas.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">16.</span>
+                            Não subir é cair; não avançar é retroceder.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">17.</span>
+                            Quem ajuda o próximo a subir aproxima-se também do cume.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">18.</span>
+                            A beleza da paisagem compensa a dureza da subida.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">19.</span>
+                            Os pés se cansam, mas a vontade deve permanecer firme.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">20.</span>
+                            Não busque atalhos nas montanhas; os caminhos fáceis escondem abismos.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">21.</span>
+                            Quem conhece o próprio limite sabe até onde pode subir.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">22.</span>
+                            A humildade é a companheira mais segura nas alturas.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">23.</span>
+                            O vento sopra forte contra os mais altos cumes.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">24.</span>
+                            Água pura brota das fontes mais escondidas.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">25.</span>
+                            Quem escala com olhos no chão não vê o que está acima.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">26.</span>
+                            Respeita a montanha e ela te protegerá.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">27.</span>
+                            A coragem não é ausência de medo, mas a decisão de seguir adiante.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">28.</span>
+                            Quem chega ao cume compreende o valor de cada passo.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">29.</span>
+                            O caminho reto é sempre o mais difícil de trilhar.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">30.</span>
+                            Ensina o que aprendeste nas alturas, para que outros também possam subir.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
 
 
-        <!-- JÉSSICA -->
-        <section id="jessica">
 
-            <h2 class="secao-titulo">❧ De Jéssica ❧</h2>
+            <!-- =========================
+                 REINO DE PAMELA
+            ========================== -->
 
-            <div class="grade-colunas">
+            <section class="conteudo-aba" id="pamela">
 
-                <article class="coluna-autor">
+                <div class="reino-caixa pamela">
 
-                    <span class="cantosupdir">⚔️</span>
-                    <span class="cantoinfesq">⚔️</span>
+                    <div class="reino-cabecalho">
 
-                    <h3 class="coluna-nome">Jéssica</h3>
+                        <h2 class="reino-nome">
+                            Pamela
+                        </h2>
 
-                    <p class="coluna-tema">
-                        Do Mistério e o Sentido da Vida
-                    </p>
+                        <p class="reino-lugar">
+                            ✨ Reino das Estrelas Distantes
+                        </p>
+
+                        <p class="reino-tema">
+                            Da Verdade Oculta e do Saber
+                        </p>
+
+                    </div>
+
 
                     <div
-                        class="coluna-img"
-                        style="background-image: url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=600&q=80');">
+                        class="reino-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80');">
                     </div>
 
-                    <p>
-                        Somos vento que passa e estrela que permanece.
-                        De onde viemos? Para onde seguimos? Eis o mistério
-                        que nos faz grandes. Cabe a nós, breves viajantes,
-                        tecer sentido nesta jornada enquanto a luz nos acompanha.
-                    </p>
 
-                    <a href="#" class="leia-mais">
-                        Ler o manuscrito →
-                    </a>
+                    <div class="topicos">
 
-                </article>
+                        <div class="topico">
+                            <span class="topico-num">01.</span>
+                            A verdade brilha como estrela, mas nem todos sabem olhar para o alto.
+                        </div>
 
-            </div>
+                        <div class="topico">
+                            <span class="topico-num">02.</span>
+                            Quem busca com sinceridade encontrará, antes ou depois.
+                        </div>
 
-        </section>
+                        <div class="topico">
+                            <span class="topico-num">03.</span>
+                            A sabedoria não se rouba, se conquista com tempo e humildade.
+                        </div>
 
+                        <div class="topico">
+                            <span class="topico-num">04.</span>
+                            Há verdades que só se revelam à luz das estrelas.
+                        </div>
 
-        <!-- JULIA -->
-        <section id="julia">
+                        <div class="topico">
+                            <span class="topico-num">05.</span>
+                            Quem nada questiona nada aprende.
+                        </div>
 
-            <h2 class="secao-titulo">❧ De Julia ❧</h2>
+                        <div class="topico">
+                            <span class="topico-num">06.</span>
+                            O saber é infinito; quanto mais se sabe, mais se descobre que nada se sabe.
+                        </div>
 
-            <div class="grade-colunas">
+                        <div class="topico">
+                            <span class="topico-num">07.</span>
+                            A humildade é a chave que abre as portas do conhecimento.
+                        </div>
 
-                <article class="coluna-autor">
+                        <div class="topico">
+                            <span class="topico-num">08.</span>
+                            Não tenhas vergonha de perguntar; a vergonha está em permanecer na ignorância.
+                        </div>
 
-                    <span class="cantosupdir">⚔️</span>
-                    <span class="cantoinfesq">⚔️</span>
+                        <div class="topico">
+                            <span class="topico-num">09.</span>
+                            As estrelas estão lá, mesmo quando nuvens as escondem.
+                        </div>
 
-                    <h3 class="coluna-nome">Julia</h3>
+                        <div class="topico">
+                            <span class="topico-num">10.</span>
+                            A paciência é a companheira indispensável de quem busca a verdade.
+                        </div>
 
-                    <p class="coluna-tema">
-                        Da Justiça e do Bem Comum
-                    </p>
+                        <div class="topico">
+                            <span class="topico-num">11.</span>
+                            Quem quer saber depressa, saberá pouco e mal.
+                        </div>
 
-                    <div
-                        class="coluna-img"
-                        style="background-image: url('https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=600&q=80');">
+                        <div class="topico">
+                            <span class="topico-num">12.</span>
+                            A luz da verdade pode tardar, mas jamais se apaga.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">13.</span>
+                            Aprende a duvidar de tudo, exceto da tua busca.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">14.</span>
+                            O conhecimento sem bondade é perigoso como fogo sem controle.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">15.</span>
+                            Cada estrela tem seu nome e seu segredo; assim também cada verdade.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">16.</span>
+                            Quem ensina, aprende duas vezes.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">17.</span>
+                            As trevas não se dissipam com pragas, mas com a luz do saber.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">18.</span>
+                            Não busques a verdade para te gloriares, mas para te guiares.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">19.</span>
+                            A curiosidade é o primeiro passo rumo às estrelas.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">20.</span>
+                            Quem lê o firmamento compreende o quanto é pequeno, mas também o quanto é grandioso.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">21.</span>
+                            Nem toda luz vem do sol; há luz que habita dentro de ti.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">22.</span>
+                            O silêncio das noites estreladas traz respostas que as palavras não podem.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">23.</span>
+                            Quem ignora o passado não compreende o presente nem o futuro.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">24.</span>
+                            A verdade não tem dono; é de todos que a buscam.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">25.</span>
+                            Brilha a tua luz sem ofuscar a dos outros.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">26.</span>
+                            Quem conhece apenas uma estrela não conhece o céu.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">27.</span>
+                            A sabedoria começa onde termina a presunção.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">28.</span>
+                            Busca a verdade com o coração puro e ela se revelará.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">29.</span>
+                            As estrelas guiam quem confia nelas.
+                        </div>
+
+                        <div class="topico">
+                            <span class="topico-num">30.</span>
+                            O saber é como luz: quanto mais se reparte, mais se espalha.
+                        </div>
+
                     </div>
 
-                    <p>
-                        Não fomos criados para viver sós como lobos nas
-                        montanhas. A justiça é o alicerce onde repousa a paz.
-                        Onde há desigualdade, há ferida. Lutai pelo bem de todos,
-                        pois nenhum homem é uma ilha.
-                    </p>
+                </div>
 
-                    <a href="#" class="leia-mais">
-                        Ler o manuscrito →
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
+            </section>
 
 
-        <!-- OTÁVIO -->
-        <section id="otavio">
+            <!-- OS OUTROS REINOS SERÃO INSERIDOS AQUI -->
 
-            <h2 class="secao-titulo">❧ De Otávio ❧</h2>
-
-            <div class="grade-colunas">
-
-                <article class="coluna-autor">
-
-                    <span class="cantosupdir">⚔️</span>
-                    <span class="cantoinfesq">⚔️</span>
-
-                    <h3 class="coluna-nome">Otávio</h3>
-
-                    <p class="coluna-tema">
-                        Da Beleza que Eleva a Alma
-                    </p>
-
-                    <div
-                        class="coluna-img"
-                        style="background-image: url('https://images.unsplash.com/photo-1524995997023-da1c4fd919c8?w=600&q=80');">
+            <section class="conteudo-aba" id="jessica">
+                <div class="reino-caixa jessica">
+                    <div class="reino-cabecalho">
+                        <h2 class="reino-nome">Jéssica</h2>
+                        <p class="reino-lugar">🌙 Reino da Eternidade</p>
+                        <p class="reino-tema">
+                            Conteúdo original ainda não presente no arquivo enviado.
+                        </p>
                     </div>
+                </div>
+            </section>
 
-                    <p>
-                        O belo não é apenas o que encanta os olhos, mas o que
-                        eleva o espírito. A beleza é rastro da harmonia divina
-                        neste mundo. Contemplai-a e, por meio dela, contemplai
-                        aquilo que é eterno e imutável.
-                    </p>
-
-                    <a href="#" class="leia-mais">
-                        Ler o manuscrito →
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- GEOVANA -->
-        <section id="geovana">
-
-            <h2 class="secao-titulo">❧ De Geovana ❧</h2>
-
-            <div class="grade-colunas">
-
-                <article class="coluna-autor">
-
-                    <span class="cantosupdir">⚔️</span>
-                    <span class="cantoinfesq">⚔️</span>
-
-                    <h3 class="coluna-nome">Geovana</h3>
-
-                    <p class="coluna-tema">
-                        Da Esperança e a Luz que Não Se Apaga
-                    </p>
-
-                    <div
-                        class="coluna-img"
-                        style="background-image: url('https://images.unsplash.com/photo-1488190211105-853e7c6c39c4?w=600&q=80');">
+            <section class="conteudo-aba" id="julia">
+                <div class="reino-caixa julia">
+                    <div class="reino-cabecalho">
+                        <h2 class="reino-nome">Julia</h2>
+                        <p class="reino-lugar">🏛️ Reino das Cidades</p>
                     </div>
+                </div>
+            </section>
 
-                    <p>
-                        Até nas trevas mais profundas, há sempre uma centelha
-                        que não se apaga. A esperança é essa luz que habita em
-                        cada coração. Desanima não, ó peregrino — pois a aurora
-                        segue sempre a noite mais escura.
-                    </p>
+            <section class="conteudo-aba" id="otavio">
+                <div class="reino-caixa otavio">
+                    <div class="reino-cabecalho">
+                        <h2 class="reino-nome">Otávio</h2>
+                        <p class="reino-lugar">☀️ Reino da Harmonia</p>
+                    </div>
+                </div>
+            </section>
 
-                    <a href="#" class="leia-mais">
-                        Ler o manuscrito →
-                    </a>
+            <section class="conteudo-aba" id="geovana">
+                <div class="reino-caixa geovana">
+                    <div class="reino-cabecalho">
+                        <h2 class="reino-nome">Geovana</h2>
+                        <p class="reino-lugar">🌅 Reino da Aurora</p>
+                    </div>
+                </div>
+            </section>
 
-                </article>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- RODAPÉ -->
-    <footer>
-
-        <p>
-            "Aquele que busca a sabedoria jamais caminha completamente
-            sozinho."
-        </p>
-
-        <p>
-            Revista Filosófica — Sabedoria Antiga
-        </p>
-
-    </footer>
+        </main>
 
 
+        <footer>
+            "A sabedoria começa quando aprendemos a olhar além de nós mesmos."
+        </footer>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
