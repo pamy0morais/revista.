@@ -1,884 +1,581 @@
-<main class="container">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ================================================= -->
-    <!-- REINO 1 - EMILY -->
-    <!-- ================================================= -->
+    <title>Os Seis Reinos da Sabedoria</title>
 
-    <div class="conteudo-aba visivel" id="emily">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <div class="reino-caixa emily">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 
-            <div class="reino-cabecalho">
-                <h2 class="reino-nome">Emily</h2>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-                <p class="reino-lugar">
-                    🏔️ Reino das Montanhas Geladas
-                </p>
+<body>
 
-                <p class="reino-tema">
-                    Da Virtude e do Caminho Reto
-                </p>
-            </div>
+    <!-- TELA DE ENTRADA -->
+    <div class="tela-entrada" id="telaEntrada">
 
-            <div class="topicos">
+        <div class="capa-moldura">
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">01.</span>
-                        A virtude é o caminho mais íngreme, mas o único que leva ao cume.
-                    </div>
-                </div>
+            <h1 class="capa-titulo">
+                Os Seis Reinos
+            </h1>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1486870591958-9e320f3c6d92?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">02.</span>
-                        Quem teme o vento não conhece as alturas.
-                    </div>
-                </div>
+            <p class="capa-subtitulo">
+                "Quinze ensinamentos em cada reino. Caminhai e aprendei."
+            </p>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">03.</span>
-                        A firmeza de ânimo é mais forte que a rocha.
-                    </div>
-                </div>
+            <button class="botao-entrar" id="botaoEntrar">
+                ⚔️ Entrai ⚔️
+            </button>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">04.</span>
-                        Não há escada para as estrelas senão a da perseverança.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">05.</span>
-                        Quem desce ao vale perde a vista do horizonte.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">06.</span>
-                        O frio fortalece o corpo; a adversidade, a alma.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">07.</span>
-                        Cada passo em falso ensina mais que cem passos certos.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1455156218388-5e61b110d20e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">08.</span>
-                        A paciência escala montanhas que a pressa jamais verá.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1463436005319-54e1ce0e79a6?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">09.</span>
-                        Quem carrega apenas o necessário caminha mais longe.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1483728642387-6c3bdd6a9b9a?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">10.</span>
-                        A altura revela o quanto ainda há por subir.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">11.</span>
-                        As raízes mais profundas resistem às maiores tempestades.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">12.</span>
-                        Não se julga o montanhista pelo início, mas pelo cume.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1446329815452-189f729e607b?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">13.</span>
-                        O silêncio das alturas traz sabedoria que o vale desconhece.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1472214103337-72093381262c?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">14.</span>
-                        Quem se curva ao medo jamais verá o sol nascer do alto.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">15.</span>
-                        A retidão é o melhor apoio nas encostas mais perigosas.
-                    </div>
-                </div>
-
-            </div>
         </div>
+
     </div>
 
 
-    <!-- ================================================= -->
-    <!-- REINO 2 - PAMELA -->
-    <!-- ================================================= -->
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="conteudo" id="conteudo">
 
-    <div class="conteudo-aba" id="pamela">
+        <header>
 
-        <div class="reino-caixa pamela">
+            <h1>
+                Os Seis Reinos da Sabedoria
+            </h1>
 
-            <div class="reino-cabecalho">
-                <h2 class="reino-nome">Pamela</h2>
+            <p>
+                "Quinze verdades em cada terra, seis reinos de sabedoria"
+            </p>
 
-                <p class="reino-lugar">
-                    ✨ Reino das Estrelas Distantes
-                </p>
+        </header>
 
-                <p class="reino-tema">
-                    Da Verdade Oculta e do Saber
-                </p>
-            </div>
 
-            <div class="topicos">
+        <!-- ABAS -->
+        <nav class="abas">
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">01.</span>
-                        A verdade brilha como estrela, mas nem todos sabem olhar para o alto.
+            <button class="aba-btn ativa" data-reino="emily">
+                🏔️ Montanhas
+            </button>
+
+            <button class="aba-btn" data-reino="pamela">
+                ✨ Estrelas
+            </button>
+
+            <button class="aba-btn" data-reino="jessica">
+                🌙 Eternidade
+            </button>
+
+            <button class="aba-btn" data-reino="julia">
+                🏛️ Cidades
+            </button>
+
+            <button class="aba-btn" data-reino="otavio">
+                ☀️ Harmonia
+            </button>
+
+            <button class="aba-btn" data-reino="geovana">
+                🌅 Aurora
+            </button>
+
+        </nav>
+
+
+        <main class="container">
+
+
+            <!-- ================================================= -->
+            <!-- EMILY -->
+            <!-- ================================================= -->
+
+            <section class="conteudo-aba visivel" id="emily">
+
+                <div class="reino-caixa emily">
+
+                    <div class="reino-cabecalho">
+
+                        <h2 class="reino-nome">
+                            Emily
+                        </h2>
+
+                        <p class="reino-lugar">
+                            🏔️ Reino das Montanhas Geladas
+                        </p>
+
+                        <p class="reino-tema">
+                            Da Virtude e do Caminho Reto
+                        </p>
+
+                    </div>
+
+
+                    <div class="topicos">
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">01.</span>
+                                A virtude é o caminho mais íngreme, mas o único que leva ao cume.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1486870591958-9e320f3c6d92?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">02.</span>
+                                Quem teme o vento não conhece as alturas.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">03.</span>
+                                A firmeza de ânimo é mais forte que a rocha.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">04.</span>
+                                Não há escada para as estrelas senão a da perseverança.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">05.</span>
+                                Quem desce ao vale perde a vista do horizonte.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">06.</span>
+                                O frio fortalece o corpo; a adversidade, a alma.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">07.</span>
+                                Cada passo em falso ensina mais que cem passos certos.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1455156218388-5e61b110d20e?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">08.</span>
+                                A paciência escala montanhas que a pressa jamais verá.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1463436005319-54e1ce0e79a6?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">09.</span>
+                                Quem carrega apenas o necessário caminha mais longe.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1483728642387-6c3bdd6a9b9a?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">10.</span>
+                                A altura revela o quanto ainda há por subir.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">11.</span>
+                                As raízes mais profundas resistem às maiores tempestades.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">12.</span>
+                                Não se julga o montanhista pelo início, mas pelo cume.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1446329815452-189f729e607b?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">13.</span>
+                                O silêncio das alturas traz sabedoria que o vale desconhece.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1472214103337-72093381262c?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">14.</span>
+                                Quem se curva ao medo jamais verá o sol nascer do alto.
+                            </div>
+                        </div>
+
+                        <div class="topico">
+                            <div class="topico-img"
+                                style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&q=80')">
+                            </div>
+                            <div class="topico-texto">
+                                <span class="topico-num">15.</span>
+                                A retidão é o melhor apoio nas encostas mais perigosas.
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+            </section>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1507400492013-165bb81733c5?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">02.</span>
-                        Quem busca com sinceridade encontrará, antes ou depois.
+
+            <!-- ================================================= -->
+            <!-- PAMELA -->
+            <!-- ================================================= -->
+
+            <section class="conteudo-aba" id="pamela">
+
+                <div class="reino-caixa pamela">
+
+                    <div class="reino-cabecalho">
+
+                        <h2 class="reino-nome">Pamela</h2>
+
+                        <p class="reino-lugar">
+                            ✨ Reino das Estrelas Distantes
+                        </p>
+
+                        <p class="reino-tema">
+                            Da Verdade Oculta e do Saber
+                        </p>
+
+                    </div>
+
+                    <div class="topicos">
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">01.</span>A verdade brilha como estrela, mas nem todos sabem olhar para o alto.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1507400492013-165bb81733c5?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">02.</span>Quem busca com sinceridade encontrará, antes ou depois.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">03.</span>A sabedoria não se rouba, se conquista com tempo e humildade.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">04.</span>Há verdades que só se revelam à luz das estrelas.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1504567961542-e24d9439a724?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">05.</span>Quem nada questiona nada aprende.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">06.</span>O saber é infinito; quanto mais se sabe, mais se descobre que nada se sabe.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">07.</span>A humildade é a chave que abre as portas do conhecimento.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1520034475321-536038c636b8?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">08.</span>Não tenhas vergonha de perguntar; a vergonha está em permanecer na ignorância.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1436891620584-6e8e129e5bfa?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">09.</span>As estrelas estão lá, mesmo quando nuvens as escondem.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1516415814036-6323208433da?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">10.</span>A paciência é a companheira indispensável de quem busca a verdade.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">11.</span>Quem quer saber depressa, saberá pouco e mal.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">12.</span>A luz da verdade pode tardar, mas jamais se apaga.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">13.</span>Aprende a duvidar de tudo, exceto da tua busca.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">14.</span>O conhecimento sem bondade é perigoso como fogo sem controle.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">15.</span>Cada estrela tem seu nome e seu segredo; assim também cada verdade.</div></div>
+
                     </div>
                 </div>
+            </section>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">03.</span>
-                        A sabedoria não se rouba; conquista-se com tempo e humildade.
+
+            <!-- ================================================= -->
+            <!-- JÉSSICA -->
+            <!-- ================================================= -->
+
+            <section class="conteudo-aba" id="jessica">
+
+                <div class="reino-caixa jessica">
+
+                    <div class="reino-cabecalho">
+                        <h2 class="reino-nome">Jéssica</h2>
+
+                        <p class="reino-lugar">
+                            🌙 Reino da Eternidade
+                        </p>
+
+                        <p class="reino-tema">
+                            Do Mistério e do Sentido da Vida
+                        </p>
+                    </div>
+
+                    <div class="topicos">
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1507400492013-165bb81733c5?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">01.</span>O mistério da vida não se resolve com palavras, se vive com o coração.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">02.</span>O tempo passa, mas o que somos permanece.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">03.</span>O sentido da jornada está na caminhada, não apenas no destino.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1438449805896-28a666819a20?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">04.</span>Somos breves como luar, mas refletimos algo que não tem fim.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1504198453319-5ce911bafcde?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">05.</span>Não temas o que não compreendes; teme apenas o que te afasta do bem.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">06.</span>A eternidade se constrói nos pequenos instantes de cada dia.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">07.</span>Quem vive apenas para si mesmo perde o sentido da existência.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">08.</span>O que deixamos nos outros é aquilo que o tempo não pode apagar.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">09.</span>Há fronteiras entre aquilo que vemos e aquilo que compreendemos.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">10.</span>A vida é pergunta; cabe a nós caminhar em busca das respostas.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1518173946687-a4c036121c71?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">11.</span>Quem corre contra o tempo jamais conseguirá alcançá-lo.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">12.</span>Cada começo carrega dentro de si a promessa de uma transformação.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">13.</span>O que está oculto também pode ensinar aqueles que sabem observar.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1472289065668-ce650ac443d3?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">14.</span>As lembranças são pequenas pontes entre passado e presente.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">15.</span>Nem todo mistério precisa ser resolvido para possuir significado.</div></div>
+
                     </div>
                 </div>
+            </section>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">04.</span>
-                        Há verdades que só se revelam à luz das estrelas.
+
+            <!-- ================================================= -->
+            <!-- JULIA -->
+            <!-- ================================================= -->
+
+            <section class="conteudo-aba" id="julia">
+
+                <div class="reino-caixa julia">
+
+                    <div class="reino-cabecalho">
+                        <h2 class="reino-nome">Julia</h2>
+
+                        <p class="reino-lugar">
+                            🏛️ Reino das Cidades dos Homens
+                        </p>
+
+                        <p class="reino-tema">
+                            Da Justiça e do Bem Comum
+                        </p>
+                    </div>
+
+                    <div class="topicos">
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">01.</span>Nenhuma cidade é justa onde uns têm demais e outros nada têm.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1496442226666-8d4d0e60e327?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">02.</span>A justiça é o alicerce sem o qual toda sociedade desaba.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">03.</span>Os homens foram feitos para viver como irmãos, não como senhores e servos.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">04.</span>Quem trata o próximo com desigualdade constrói sobre areia.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">05.</span>A lei deve ser igual para todos.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">06.</span>O bem comum está acima do benefício individual.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">07.</span>Quem oprime os fracos não merece respeito.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">08.</span>A verdadeira riqueza de uma cidade está na dignidade de seu povo.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">09.</span>Sem liberdade não há justiça; sem justiça não há paz.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1521210382507-4139d4b2b815?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">10.</span>Defender os direitos dos outros também é defender os próprios.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">11.</span>Quem cala diante da injustiça torna-se cúmplice dela.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1558403194-611838da3d57?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">12.</span>A força sem justiça é violência.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1502691876997-314cba40a466?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">13.</span>Uma cidade grande é feita de pessoas de coração nobre.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">14.</span>Todos merecem dignidade, respeito e oportunidades.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1556740755-069a40165b40?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">15.</span>Quem governa apenas para si mesmo não compreende o verdadeiro significado da liderança.</div></div>
+
                     </div>
                 </div>
+            </section>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1504567961542-e24d9439a724?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">05.</span>
-                        Quem nada questiona nada aprende.
+
+            <!-- ================================================= -->
+            <!-- OTÁVIO -->
+            <!-- ================================================= -->
+
+            <section class="conteudo-aba" id="otavio">
+
+                <div class="reino-caixa otavio">
+
+                    <div class="reino-cabecalho">
+
+                        <h2 class="reino-nome">
+                            Otávio
+                        </h2>
+
+                        <p class="reino-lugar">
+                            ☀️ Reino da Harmonia e Beleza
+                        </p>
+
+                        <p class="reino-tema">
+                            Da Beleza que Eleva a Alma
+                        </p>
+
+                    </div>
+
+                    <div class="topicos">
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1472289065668-ce650ac443d3?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">01.</span>A beleza pode revelar a ordem escondida nas coisas.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">02.</span>Onde existe harmonia, existe espaço para a paz.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1518173946687-a4c036121c71?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">03.</span>Contemplar o belo também é aprender a observar.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1490730141103-6cac27abb37f?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">04.</span>A verdadeira beleza nasce de dentro para fora.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">05.</span>A natureza ensina que tudo possui seu próprio ritmo.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">06.</span>A simplicidade muitas vezes guarda a maior beleza.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">07.</span>O equilíbrio nasce quando aprendemos a respeitar nossos limites.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">08.</span>Uma mente tranquila consegue enxergar beleza onde outros veem apenas caos.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">09.</span>Harmonia não significa ausência de diferenças.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">10.</span>Cada parte da natureza possui uma função dentro do todo.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">11.</span>A paz começa quando aprendemos a ouvir.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1511497584788-876760111969?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">12.</span>A beleza da vida está também nos pequenos momentos.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">13.</span>Respeitar a natureza é respeitar a própria existência.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">14.</span>A harmonia transforma diferenças em possibilidades.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">15.</span>Quando há equilíbrio entre alma e mundo, nasce a verdadeira serenidade.</div></div>
+
                     </div>
                 </div>
+            </section>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">06.</span>
-                        O saber é infinito; quanto mais se sabe, mais se percebe o quanto falta aprender.
+
+            <!-- ================================================= -->
+            <!-- GEOVANA -->
+            <!-- ================================================= -->
+
+            <section class="conteudo-aba" id="geovana">
+
+                <div class="reino-caixa geovana">
+
+                    <div class="reino-cabecalho">
+
+                        <h2 class="reino-nome">
+                            Geovana
+                        </h2>
+
+                        <p class="reino-lugar">
+                            🌅 Reino da Aurora
+                        </p>
+
+                        <p class="reino-tema">
+                            Da Esperança e dos Novos Começos
+                        </p>
+
+                    </div>
+
+                    <div class="topicos">
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1499346030926-9a72daac6c63?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">01.</span>Todo amanhecer traz consigo uma nova possibilidade.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">02.</span>A esperança nasce mesmo depois das noites mais longas.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">03.</span>Recomeçar não significa esquecer, mas aprender com o passado.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">04.</span>Mesmo pequenas luzes conseguem romper a escuridão.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">05.</span>O futuro começa nas escolhas feitas hoje.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">06.</span>Não é preciso enxergar todo o caminho para dar o primeiro passo.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">07.</span>Cada erro pode se transformar em aprendizado.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1490730141103-6cac27abb37f?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">08.</span>A mudança assusta, mas também abre portas desconhecidas.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1518173946687-a4c036121c71?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">09.</span>A vida continua florescendo mesmo depois das tempestades.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">10.</span>Ter esperança é acreditar que o amanhã pode ser diferente.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">11.</span>Nenhum começo precisa ser perfeito para ser importante.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">12.</span>A coragem aparece quando decidimos continuar.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">13.</span>O amanhã pertence àqueles que não abandonam seus sonhos.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">14.</span>Depois da noite, a luz sempre encontra uma maneira de retornar.</div></div>
+
+                        <div class="topico"><div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=500&q=80')"></div><div class="topico-texto"><span class="topico-num">15.</span>Todo novo amanhecer é um convite para escrever uma nova história.</div></div>
+
                     </div>
                 </div>
+            </section>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">07.</span>
-                        A humildade é a chave que abre as portas do conhecimento.
-                    </div>
-                </div>
+        </main>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1520034475321-536038c636b8?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">08.</span>
-                        Não tenhas vergonha de perguntar; a dúvida é companheira do sábio.
-                    </div>
-                </div>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1436891620584-6e8e129e5bfa?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">09.</span>
-                        As estrelas estão lá, mesmo quando as nuvens as escondem.
-                    </div>
-                </div>
+        <footer>
+            "Aquele que busca sabedoria nunca caminha verdadeiramente sozinho."
+            <br><br>
+            ✦ Os Seis Reinos da Sabedoria ✦
+        </footer>
 
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1516415814036-6323208433da?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">10.</span>
-                        A paciência é companheira indispensável de quem busca a verdade.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">11.</span>
-                        Quem quer saber depressa poderá compreender pouco.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">12.</span>
-                        A luz da verdade pode tardar, mas jamais deixa de existir.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">13.</span>
-                        O conhecimento transforma aquele que tem coragem de recebê-lo.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1534791547706-5f38b0c8a8f5?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">14.</span>
-                        Toda pergunta sincera é uma porta para um novo caminho.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">15.</span>
-                        Conhecer o mundo é também aprender a conhecer a si mesmo.
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </div>
 
+    <script src="script.js"></script>
 
-    <!-- ================================================= -->
-    <!-- REINO 3 - JESSICA -->
-    <!-- ================================================= -->
-
-    <div class="conteudo-aba" id="jessica">
-
-        <div class="reino-caixa jessica">
-
-            <div class="reino-cabecalho">
-                <h2 class="reino-nome">Jessica</h2>
-
-                <p class="reino-lugar">
-                    🌙 Reino da Eternidade
-                </p>
-
-                <p class="reino-tema">
-                    Do Tempo, da Existência e do Mistério
-                </p>
-            </div>
-
-            <div class="topicos">
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">01.</span>
-                        O tempo leva tudo, mas deixa sabedoria para quem sabe observar.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">02.</span>
-                        Nada permanece igual, e justamente por isso cada instante importa.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">03.</span>
-                        O passado ensina, mas não deve governar o presente.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">04.</span>
-                        A noite não é o fim; é apenas uma parte do ciclo.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1511497584788-876760111969?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">05.</span>
-                        O silêncio revela aquilo que o ruído costuma esconder.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">06.</span>
-                        Todo amanhecer oferece ao homem uma nova oportunidade.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">07.</span>
-                        O mistério não precisa ser vencido para ser contemplado.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">08.</span>
-                        Existem caminhos que só se revelam depois que começamos a andar.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1472396961693-142e6e269027?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">09.</span>
-                        A natureza conhece ciclos que o homem muitas vezes esquece.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">10.</span>
-                        O infinito começa quando aceitamos que nem tudo possui resposta imediata.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">11.</span>
-                        A vida é breve, e por isso merece ser vivida com propósito.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">12.</span>
-                        A memória transforma momentos passageiros em histórias eternas.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">13.</span>
-                        Há beleza naquilo que não podemos controlar.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">14.</span>
-                        O presente é o único lugar onde nossas escolhas podem transformar o futuro.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">15.</span>
-                        Quem contempla o tempo aprende a valorizar aquilo que possui.
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ================================================= -->
-    <!-- REINO 4 - JULIA -->
-    <!-- ================================================= -->
-
-    <div class="conteudo-aba" id="julia">
-
-        <div class="reino-caixa julia">
-
-            <div class="reino-cabecalho">
-                <h2 class="reino-nome">Julia</h2>
-
-                <p class="reino-lugar">
-                    🏛️ Reino das Cidades Antigas
-                </p>
-
-                <p class="reino-tema">
-                    Da Sociedade, Justiça e Convivência
-                </p>
-            </div>
-
-            <div class="topicos">
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">01.</span>
-                        Uma cidade justa começa com cidadãos dispostos a agir corretamente.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">02.</span>
-                        Nenhuma sociedade cresce quando seus habitantes deixam de ouvir uns aos outros.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">03.</span>
-                        A justiça deve alcançar tanto os fortes quanto os pequenos.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">04.</span>
-                        Respeitar o próximo é uma das primeiras leis da convivência.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">05.</span>
-                        Uma comunidade se torna forte quando seus membros cooperam.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">06.</span>
-                        A palavra possui força quando é acompanhada pela responsabilidade.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">07.</span>
-                        As grandes obras começam com pequenas decisões.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">08.</span>
-                        O poder sem sabedoria pode destruir aquilo que deveria proteger.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">09.</span>
-                        Uma cidade é feita não apenas de pedras, mas de histórias.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">10.</span>
-                        A diferença entre as pessoas não deve impedir o respeito.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">11.</span>
-                        A ordem existe para proteger, não para oprimir.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">12.</span>
-                        Toda sociedade precisa aprender com os erros de sua história.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">13.</span>
-                        A verdadeira riqueza de uma cidade está em seu povo.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">14.</span>
-                        O diálogo constrói pontes onde o conflito ergue muros.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1494522358652-f30e61a60313?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">15.</span>
-                        Uma comunidade permanece quando seus valores sobrevivem às gerações.
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ================================================= -->
-    <!-- REINO 5 - OTAVIO -->
-    <!-- ================================================= -->
-
-    <div class="conteudo-aba" id="otavio">
-
-        <div class="reino-caixa otavio">
-
-            <div class="reino-cabecalho">
-                <h2 class="reino-nome">Otavio</h2>
-
-                <p class="reino-lugar">
-                    ☀️ Reino da Harmonia
-                </p>
-
-                <p class="reino-tema">
-                    Do Equilíbrio, Coragem e Temperança
-                </p>
-            </div>
-
-            <div class="topicos">
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">01.</span>
-                        A verdadeira força sabe quando avançar e quando recuar.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">02.</span>
-                        O equilíbrio nasce quando razão e emoção aprendem a caminhar juntas.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">03.</span>
-                        Coragem não significa ausência de medo, mas disposição para enfrentá-lo.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">04.</span>
-                        A natureza ensina que tudo possui seu próprio ritmo.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">05.</span>
-                        Quem deseja controlar tudo acaba perdendo a paz.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">06.</span>
-                        A moderação protege o coração contra os excessos.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">07.</span>
-                        Nem toda batalha merece ser travada.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">08.</span>
-                        A paz interior começa quando aprendemos a aceitar nossos limites.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">09.</span>
-                        A paciência transforma dificuldades em oportunidades de crescimento.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">10.</span>
-                        Quem domina a si mesmo possui uma força maior que qualquer império.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">11.</span>
-                        A serenidade permite enxergar soluções que a pressa não percebe.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1472214103337-72093381262c?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">12.</span>
-                        A sabedoria está muitas vezes no meio entre dois extremos.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">13.</span>
-                        O sol não precisa disputar espaço com a lua para cumprir seu papel.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">14.</span>
-                        Viver em harmonia é compreender que ninguém existe sozinho.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">15.</span>
-                        A verdadeira vitória é chegar ao fim sem perder a própria paz.
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ================================================= -->
-    <!-- REINO 6 - GEOVANA -->
-    <!-- ================================================= -->
-
-    <div class="conteudo-aba" id="geovana">
-
-        <div class="reino-caixa geovana">
-
-            <div class="reino-cabecalho">
-                <h2 class="reino-nome">Geovana</h2>
-
-                <p class="reino-lugar">
-                    🌅 Reino da Aurora
-                </p>
-
-                <p class="reino-tema">
-                    Da Esperança, Renovação e Futuro
-                </p>
-            </div>
-
-            <div class="topicos">
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">01.</span>
-                        Todo amanhecer lembra que nenhum momento precisa ser o último capítulo.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">02.</span>
-                        A esperança nasce mesmo depois das noites mais longas.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">03.</span>
-                        Recomeçar não apaga o passado; transforma aquilo que aprendemos com ele.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">04.</span>
-                        A luz encontra caminhos mesmo quando tudo parece escuro.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">05.</span>
-                        Pequenas sementes podem carregar grandes futuros.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">06.</span>
-                        O futuro pertence àqueles que continuam construindo apesar das dúvidas.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1472214103337-72093381262c?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">07.</span>
-                        A esperança não exige certeza, apenas coragem para continuar.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">08.</span>
-                        Toda mudança começa quando alguém decide dar o primeiro passo.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">09.</span>
-                        Mesmo a árvore mais antiga um dia foi apenas uma pequena semente.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">10.</span>
-                        O crescimento acontece quando temos coragem de deixar velhos caminhos.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">11.</span>
-                        A renovação começa dentro antes de aparecer por fora.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">12.</span>
-                        Há sempre algo novo esperando para nascer depois de uma grande mudança.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">13.</span>
-                        Não precisamos enxergar todo o caminho para dar o próximo passo.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">14.</span>
-                        A aurora não pergunta se a noite merece terminar; simplesmente chega.
-                    </div>
-                </div>
-
-                <div class="topico">
-                    <div class="topico-img" style="background-image:url('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&q=80');"></div>
-                    <div class="topico-texto">
-                        <span class="topico-num">15.</span>
-                        Esperar pelo amanhã é também acreditar que podemos construí-lo.
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</main>
+</body>
+</html>
