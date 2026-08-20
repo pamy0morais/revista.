@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&display=swap');
+
+/* ============================= */
+/* RESET */
+/* ============================= */
 
 * {
-
-
-  <style>
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+/* ============================= */
+/* VARIÁVEIS */
+/* ============================= */
 
 :root {
     --cor-fundo: #0d0d12;
@@ -17,6 +21,10 @@
     --cor-azul-noturno: #1a3060;
     --cor-ferro: #303850;
 }
+
+/* ============================= */
+/* GERAL */
+/* ============================= */
 
 body {
     font-family: 'IM Fell English', 'Garamond', 'Times New Roman', serif;
@@ -33,6 +41,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100vw;
     height: 100vh;
 
@@ -64,6 +73,10 @@ body {
     pointer-events: none;
 }
 
+/* ============================= */
+/* MOLDURA */
+/* ============================= */
+
 .capa-moldura {
     border: 4px solid;
 
@@ -78,12 +91,13 @@ body {
         ) 1;
 
     padding: 4rem 3rem;
+
     text-align: center;
 
     box-shadow:
-        inset 0 0 100px rgba(5, 8, 15, .9),
-        inset 0 0 200px rgba(0, 0, 0, .6),
-        0 0 60px rgba(15, 30, 64, .3);
+        inset 0 0 100px rgba(5, 8, 15, 0.9),
+        inset 0 0 200px rgba(0, 0, 0, 0.6),
+        0 0 60px rgba(15, 30, 64, 0.3);
 
     max-width: 90%;
 }
@@ -95,31 +109,39 @@ body {
     display: block;
 
     color: var(--cor-prata);
+
     font-size: 1.3rem;
 
-    letter-spacing: .8rem;
+    letter-spacing: 0.8rem;
+
     margin: 1rem 0;
 
-    opacity: .7;
+    opacity: 0.7;
 }
+
+/* ============================= */
+/* TÍTULO DA CAPA */
+/* ============================= */
 
 .capa-titulo {
     font-family: 'UnifrakturMaguntia', serif;
 
     font-size: 3rem;
+
     letter-spacing: 6px;
 
     color: var(--cor-prata);
 
     text-shadow:
-        0 0 15px rgba(192, 200, 224, .35),
-        0 0 30px rgba(26, 48, 96, .6);
+        0 0 15px rgba(192, 200, 224, 0.35),
+        0 0 30px rgba(26, 48, 96, 0.6);
 
     margin: 1.5rem 0;
 }
 
 .capa-subtitulo {
     font-style: italic;
+
     font-size: 1.1rem;
 
     color: #707890;
@@ -129,10 +151,15 @@ body {
     margin: 0 auto 2.5rem;
 }
 
+/* ============================= */
+/* BOTÃO ENTRAR */
+/* ============================= */
+
 .botao-entrar {
     font-family: 'UnifrakturMaguntia', serif;
 
     font-size: 1.1rem;
+
     letter-spacing: 4px;
 
     color: var(--cor-prata);
@@ -140,25 +167,25 @@ body {
     background:
         linear-gradient(
             180deg,
-            rgba(26, 48, 96, .4),
-            rgba(15, 30, 64, .3)
+            rgba(26, 48, 96, 0.4),
+            rgba(15, 30, 64, 0.3)
         );
 
     border: 2px solid #405880;
 
-    padding: .9rem 2.2rem;
+    padding: 0.9rem 2.2rem;
 
     cursor: pointer;
 
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 .botao-entrar:hover {
     background:
         linear-gradient(
             180deg,
-            rgba(26, 48, 96, .6),
-            rgba(15, 30, 64, .4)
+            rgba(26, 48, 96, 0.6),
+            rgba(15, 30, 64, 0.4)
         );
 
     border-color: var(--cor-prata);
@@ -176,12 +203,13 @@ body {
     transform: translateY(30px);
 
     transition:
-        opacity 1.2s ease .3s,
-        transform 1.2s ease .3s;
+        opacity 1.2s ease 0.3s,
+        transform 1.2s ease 0.3s;
 }
 
 .conteudo.visivel {
     opacity: 1;
+
     transform: translateY(0);
 }
 
@@ -231,9 +259,10 @@ header h1 {
 
 header p {
     font-style: italic;
+
     color: #707890;
 
-    margin-top: .4rem;
+    margin-top: 0.4rem;
 }
 
 /* ============================= */
@@ -242,11 +271,12 @@ header p {
 
 .abas {
     display: flex;
+
     flex-wrap: wrap;
 
     justify-content: center;
 
-    gap: .3rem;
+    gap: 0.3rem;
 
     background:
         linear-gradient(
@@ -257,7 +287,7 @@ header p {
 
     border-bottom: 3px solid var(--cor-ferro);
 
-    padding: .5rem 1rem 0;
+    padding: 0.5rem 1rem 0;
 
     position: sticky;
 
@@ -269,7 +299,7 @@ header p {
 .aba-btn {
     font-family: 'UnifrakturMaguntia', serif;
 
-    font-size: .85rem;
+    font-size: 0.85rem;
 
     letter-spacing: 1px;
 
@@ -281,14 +311,14 @@ header p {
 
     border-bottom: none;
 
-    padding: .6rem .8rem;
+    padding: 0.6rem 0.8rem;
 
     cursor: pointer;
 
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 }
 
 .aba-btn:hover {
@@ -296,7 +326,7 @@ header p {
 
     border-color: #405880;
 
-    background: rgba(64, 88, 128, .1);
+    background: rgba(64, 88, 128, 0.1);
 }
 
 .aba-btn.ativa {
@@ -305,8 +335,8 @@ header p {
     background:
         linear-gradient(
             180deg,
-            rgba(64, 88, 128, .25),
-            rgba(48, 56, 80, .15)
+            rgba(64, 88, 128, 0.25),
+            rgba(48, 56, 80, 0.15)
         );
 
     border-color: #6078a0;
@@ -315,7 +345,7 @@ header p {
 
     margin-bottom: -3px;
 
-    padding-bottom: calc(.6rem + 3px);
+    padding-bottom: calc(0.6rem + 3px);
 }
 
 /* ============================= */
@@ -333,22 +363,27 @@ header p {
 .conteudo-aba {
     display: none;
 
-    animation: surgir .6s ease forwards;
+    animation: surgir 0.6s ease forwards;
 }
 
 .conteudo-aba.visivel {
     display: block;
 }
 
-@keyframes surgir {
+/* ============================= */
+/* ANIMAÇÃO */
+/* ============================= */
 
+@keyframes surgir {
     from {
         opacity: 0;
+
         transform: translateY(15px);
     }
 
     to {
         opacity: 1;
+
         transform: translateY(0);
     }
 }
@@ -365,8 +400,8 @@ header p {
     padding: 2rem;
 
     box-shadow:
-        inset 0 0 80px rgba(0, 0, 0, .5),
-        0 0 40px rgba(0, 0, 0, .3);
+        inset 0 0 80px rgba(0, 0, 0, 0.5),
+        0 0 40px rgba(0, 0, 0, 0.3);
 }
 
 .reino-cabecalho {
@@ -376,7 +411,7 @@ header p {
 
     padding-bottom: 1.2rem;
 
-    border-bottom: 1px dashed rgba(255, 255, 255, .15);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
 }
 
 .reino-nome {
@@ -384,7 +419,7 @@ header p {
 
     font-size: 2.2rem;
 
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
 
     letter-spacing: 4px;
 }
@@ -394,9 +429,9 @@ header p {
 
     font-style: italic;
 
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
 
-    opacity: .85;
+    opacity: 0.85;
 }
 
 .reino-tema {
@@ -428,28 +463,29 @@ header p {
 
     border-radius: 10px;
 
-    background: rgba(0, 0, 0, .25);
+    background: rgba(0, 0, 0, 0.25);
 
     border-left: 4px solid;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .topico:hover {
-    background: rgba(255, 255, 255, .05);
+    background: rgba(255, 255, 255, 0.05);
 
     transform: translateX(5px);
 }
 
 .topico-img {
     width: 130px;
+
     height: 90px;
 
     flex-shrink: 0;
 
     border-radius: 8px;
 
-    border: 2px solid rgba(255, 255, 255, .15);
+    border: 2px solid rgba(255, 255, 255, 0.15);
 
     background-size: cover;
 
@@ -459,15 +495,15 @@ header p {
 .topico-texto {
     flex: 1;
 
-    font-size: .98rem;
+    font-size: 0.98rem;
 }
 
 .topico-num {
     font-weight: bold;
 
-    margin-right: .4rem;
+    margin-right: 0.4rem;
 
-    opacity: .6;
+    opacity: 0.6;
 
     font-size: 1rem;
 }
@@ -497,7 +533,6 @@ header p {
         hue-rotate(190deg);
 }
 
-
 .pamela {
     background: linear-gradient(180deg, #182038, #0f1530);
 
@@ -518,7 +553,6 @@ header p {
         saturate(80%)
         hue-rotate(210deg);
 }
-
 
 .jessica {
     background: linear-gradient(180deg, #281838, #1a1030);
@@ -541,7 +575,6 @@ header p {
         hue-rotate(260deg);
 }
 
-
 .julia {
     background: linear-gradient(180deg, #203038, #152028);
 
@@ -563,7 +596,6 @@ header p {
         hue-rotate(170deg);
 }
 
-
 .otavio {
     background: linear-gradient(180deg, #302818, #252010);
 
@@ -584,7 +616,6 @@ header p {
         saturate(75%)
         hue-rotate(30deg);
 }
-
 
 .geovana {
     background: linear-gradient(180deg, #382028, #2a1520);
@@ -636,7 +667,7 @@ footer {
 
     font-style: italic;
 
-    font-size: .95rem;
+    font-size: 0.95rem;
 }
 
 /* ============================= */
@@ -658,9 +689,9 @@ footer {
     }
 
     .aba-btn {
-        font-size: .75rem;
+        font-size: 0.75rem;
 
-        padding: .4rem .5rem;
+        padding: 0.4rem 0.5rem;
     }
 
     .topico {
@@ -668,7 +699,7 @@ footer {
 
         text-align: center;
 
-        gap: .8rem;
+        gap: 0.8rem;
     }
 
     .topico-img {
