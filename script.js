@@ -1,12 +1,18 @@
-// ==========================================
+// =====================================================
 // TELA DE ENTRADA
-// ==========================================
+// =====================================================
 
 const telaEntrada = document.getElementById("telaEntrada");
 const conteudo = document.getElementById("conteudo");
 const botaoEntrar = document.getElementById("botaoEntrar");
 
-botaoEntrar.addEventListener("click", entrarNoSite);
+
+if (botaoEntrar) {
+
+    botaoEntrar.addEventListener("click", entrarNoSite);
+
+}
+
 
 function entrarNoSite() {
 
@@ -14,68 +20,94 @@ function entrarNoSite() {
 
     conteudo.classList.add("visivel");
 
-    // Depois da animação, remove a tela de entrada
     setTimeout(() => {
+
         telaEntrada.style.display = "none";
+
     }, 1600);
+
 }
 
 
-// ==========================================
+// =====================================================
 // SISTEMA DE ABAS
-// ==========================================
+// =====================================================
 
-const botoesAbas = document.querySelectorAll(".aba-btn");
-const conteudosAbas = document.querySelectorAll(".conteudo-aba");
+const botoesAbas =
+    document.querySelectorAll(".aba-btn");
+
+const conteudosAbas =
+    document.querySelectorAll(".conteudo-aba");
+
 
 botoesAbas.forEach(botao => {
 
     botao.addEventListener("click", () => {
 
-        const reinoSelecionado = botao.dataset.reino;
+        const reinoSelecionado =
+            botao.dataset.reino;
 
 
-        // Remove a aba ativa de todos
+        // Remove a classe ativa
         botoesAbas.forEach(item => {
+
             item.classList.remove("ativa");
+
         });
 
 
-        // Ativa o botão clicado
+        // Ativa o botão escolhido
         botao.classList.add("ativa");
 
 
-        // Esconde todos os reinos
+        // Esconde todos os conteúdos
         conteudosAbas.forEach(conteudoAba => {
+
             conteudoAba.classList.remove("visivel");
+
         });
 
 
-        // Mostra o reino selecionado
-        const reino = document.getElementById(reinoSelecionado);
+        // Encontra o reino correspondente
+        const reino =
+            document.getElementById(reinoSelecionado);
 
+
+        // Mostra o reino
         if (reino) {
+
             reino.classList.add("visivel");
+
         }
+
+
+        // Volta suavemente para o começo
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
 
     });
 
 });
 
 
-// ==========================================
-// VOLTAR PARA O TOPO AO TROCAR DE REINO
-// ==========================================
+// =====================================================
+// GARANTE QUE O PRÓLOGO COMECE VISÍVEL
+// =====================================================
 
-botoesAbas.forEach(botao => {
+document.addEventListener("DOMContentLoaded", () => {
 
-    botao.addEventListener("click", () => {
+    const primeiroReino =
+        document.getElementById("prologo");
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+    if (primeiroReino) {
 
-    });
+        primeiroReino.classList.add("visivel");
+
+    }
 
 });
