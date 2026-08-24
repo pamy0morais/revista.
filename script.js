@@ -1,303 +1,59 @@
 // =====================================================
-// QUANDO A PÁGINA TERMINAR DE CARREGAR
+// TELA DE ENTRADA
 // =====================================================
 
-document.addEventListener("DOMContentLoaded", () => {
+const telaEntrada = document.getElementById("telaEntrada");
+const botaoEntrar = document.getElementById("botaoEntrar");
+const conteudo = document.getElementById("conteudo");
+
+botaoEntrar.addEventListener("click", function () {
+
+    telaEntrada.classList.add("oculta");
+
+    setTimeout(function () {
+        conteudo.classList.add("visivel");
+    }, 500);
+
+});
 
 
-    // =================================================
-    // TELA DE ENTRADA
-    // =================================================
+// =====================================================
+// TROCA DE ABAS
+// =====================================================
 
-    const telaEntrada =
-        document.getElementById("telaEntrada");
+const botoesAbas = document.querySelectorAll(".aba-btn");
+const conteudosAbas = document.querySelectorAll(".conteudo-aba");
 
-    const conteudo =
-        document.getElementById("conteudo");
+botoesAbas.forEach(function (botao) {
 
-    const botaoEntrar =
-        document.getElementById("botaoEntrar");
+    botao.addEventListener("click", function () {
+
+        const reinoSelecionado = botao.dataset.reino;
 
 
-    // =================================================
-    // BOTÃO ENTRAR
-    // =================================================
-
-    if (botaoEntrar) {
-
-        botaoEntrar.addEventListener("click", () => {
-
-            if (telaEntrada) {
-
-                telaEntrada.classList.add("oculta");
-
-            }
-
-            if (conteudo) {
-
-                conteudo.classList.add("visivel");
-
-            }
-
-            setTimeout(() => {
-
-                if (telaEntrada) {
-
-                    telaEntrada.style.display = "none";
-
-                }
-
-            }, 1600);
-
+        // Remove aba ativa
+        botoesAbas.forEach(function (btn) {
+            btn.classList.remove("ativa");
         });
 
-    }
+
+        // Ativa botão clicado
+        botao.classList.add("ativa");
 
 
-    // =================================================
-    // SISTEMA DE ABAS
-    // =================================================
-
-    const botoesAbas =
-        document.querySelectorAll(".aba-btn");
-
-    const conteudosAbas =
-        document.querySelectorAll(".conteudo-aba");
-
-
-    botoesAbas.forEach((botao) => {
-
-        botao.addEventListener("click", () => {
-
-
-            // Pega o reino escolhido
-
-            const reinoSelecionado =
-                botao.getAttribute("data-reino");
-
-
-            // Remove "ativa" de todos os botões
-
-            botoesAbas.forEach((item) => {
-
-                item.classList.remove("ativa");
-
-            });
-
-
-            // Ativa o botão clicado
-
-            botao.classList.add("ativa");
-
-
-            // Esconde todos os reinos
-
-            conteudosAbas.forEach((conteudoAba) => {
-
-                conteudoAba.classList.remove("visivel");
-
-            });
-
-
-            // Procura o reino
-
-            const reino =
-                document.getElementById(reinoSelecionado);
-
-
-            // Mostra o reino escolhido
-
-            if (reino) {
-
-                reino.classList.add("visivel");
-
-            }
-
-
-            // Volta para o começo
-
-            window.scrollTo({
-
-                top: 0,
-
-                behavior: "smooth"
-
-            });
-
+        // Esconde todos os conteúdos
+        conteudosAbas.forEach(function (conteudoAba) {
+            conteudoAba.classList.remove("visivel");
         });
 
-    });
 
+        // Mostra o reino selecionado
+        const reino = document.getElementById(reinoSelecionado);
 
-    // =================================================
-    // Garante que o PRÓLOGO comece visível
-    // =================================================
-
-    const primeiroReino =
-        document.getElementById("prologo");
-
-
-    if (primeiroReino) {
-
-        primeiroReino.classList.add("visivel");
-
-    }
-
-
-    // =================================================
-    // SISTEMA DE IMAGENS AMPLIADAS
-    // =================================================
-
-    const imagens =
-        document.querySelectorAll(".topico-img");
-
-
-    // Cria a janela da imagem
-
-    const janelaImagem =
-        document.createElement("div");
-
-    janelaImagem.className =
-        "imagem-ampliada";
-
-
-    // Cria botão X
-
-    const botaoFechar =
-        document.createElement("div");
-
-    botaoFechar.className =
-        "fechar-imagem";
-
-    botaoFechar.innerHTML =
-        "&times;";
-
-
-    // Cria imagem grande
-
-    const imagemGrande =
-        document.createElement("img");
-
-
-    // Coloca tudo na janela
-
-    janelaImagem.appendChild(botaoFechar);
-
-    janelaImagem.appendChild(imagemGrande);
-
-
-    // Coloca a janela no site
-
-    document.body.appendChild(janelaImagem);
-
-
-    // =================================================
-    // CLICAR NA IMAGEM
-    // =================================================
-
-    imagens.forEach((imagem) => {
-
-        imagem.addEventListener("click", () => {
-
-
-            // Pega o endereço da imagem do CSS
-
-            const fundo =
-                imagem.style.backgroundImage;
-
-
-            if (!fundo) {
-
-                return;
-
-            }
-
-
-            // Extrai o endereço da imagem
-
-            const url =
-                fundo
-                    .replace(/^url\(["']?/, "")
-                    .replace(/["']?\)$/, "");
-
-
-            // Coloca na imagem grande
-
-            imagemGrande.src = url;
-
-
-            // Abre
-
-            janelaImagem.classList.add("aberta");
-
-            document.body.style.overflow =
-                "hidden";
-
-        });
-
-    });
-
-
-    // =================================================
-    // FECHAR PELO X
-    // =================================================
-
-    botaoFechar.addEventListener("click", (evento) => {
-
-        evento.stopPropagation();
-
-        fecharImagem();
-
-    });
-
-
-    // =================================================
-    // FECHAR CLICANDO FORA DA IMAGEM
-    // =================================================
-
-    janelaImagem.addEventListener("click", (evento) => {
-
-        if (evento.target === janelaImagem) {
-
-            fecharImagem();
-
+        if (reino) {
+            reino.classList.add("visivel");
         }
 
     });
-
-
-    // =================================================
-    // FECHAR COM ESC
-    // =================================================
-
-    document.addEventListener("keydown", (evento) => {
-
-        if (evento.key === "Escape") {
-
-            fecharImagem();
-
-        }
-
-    });
-
-
-    // =================================================
-    // FUNÇÃO FECHAR IMAGEM
-    // =================================================
-
-    function fecharImagem() {
-
-        janelaImagem.classList.remove("aberta");
-
-        document.body.style.overflow =
-            "";
-
-        setTimeout(() => {
-
-            imagemGrande.src = "";
-
-        }, 300);
-
-    }
 
 });
