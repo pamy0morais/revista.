@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,394 +7,406 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&display=swap"
-        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="tela-entrada" id="telaEntrada">
-        <div class="capa-moldura">
-            <h1 class="capa-titulo">
-                Mil Universos Sob o Mesmo Céu
-            </h1>
-            <p class="capa-subtitulo">
-                "Quinze ensinamentos em cada reino. Caminhai e aprendei."
-            </p>
-            <button class="botao-entrar" id="botaoEntrar">
-                ⚔️ Entrai ⚔️
+    <!-- ============================= -->
+    <!-- TELA DE ENTRADA -->
+    <!-- ============================= -->
+
+    <section class="entrada" id="telaEntrada">
+
+        <div class="ornamento">✦ ✦ ✦</div>
+
+        <h1>Mil Universos Sob o Mesmo Céu</h1>
+
+        <div class="ornamento">✧ ✧ ✧</div>
+
+        <p>
+            Cada pessoa carrega consigo um universo de pensamentos,
+            experiências, sentimentos e histórias. Reunidas sob o mesmo céu:
+            cinco olhares, cinco formas de ver e criar. Cada voz carrega uma
+            história. Cada história, um universo.
+        </p>
+
+        <button class="btn-entrar" onclick="entrar()">
+            Entrar e Conhecer
+        </button>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- CONTEÚDO PRINCIPAL -->
+    <!-- ============================= -->
+
+    <main class="conteudo" id="paginaConteudo">
+
+        <!-- NAVEGAÇÃO -->
+
+        <div class="navegacao-abas">
+
+            <button class="aba-btn ativa" onclick="abrirAba('prologo', this)">
+                📖 Prólogo
             </button>
+
+            <button class="aba-btn" onclick="abrirAba('emily', this)">
+                🌕 Emily
+            </button>
+
+            <button class="aba-btn" onclick="abrirAba('pamela', this)">
+                🌌 Pamela
+            </button>
+
+            <button class="aba-btn" onclick="abrirAba('jessica', this)">
+                🌸 Jéssica
+            </button>
+
+            <button class="aba-btn" onclick="abrirAba('julia', this)">
+                🪷 Julia
+            </button>
+
+            <button class="aba-btn" onclick="abrirAba('otavio', this)">
+                🌅 Otávio
+            </button>
+
         </div>
-    </div>
 
-    <div class="conteudo" id="conteudo">
 
-        <header>
-            <h1>Os Seis Reinos da Sabedoria</h1>
-            <p>"Cinco olhares, seis reinos de sabedoria, um mesmo céu."</p>
-        </header>
+        <!-- ============================= -->
+        <!-- PRÓLOGO -->
+        <!-- ============================= -->
 
-        <nav class="abas">
-            <button class="aba-btn ativa" data-reino="prologo">
-                📝 <span>Prólogo</span>
-            </button>
-            <button class="aba-btn" data-reino="emily">
-                🌕 <span>Emily</span>
-            </button>
-            <button class="aba-btn" data-reino="pamela">
-                🌌 <span>Pamela</span>
-            </button>
-            <button class="aba-btn" data-reino="jessica">
-                🌸 <span>Jéssica</span>
-            </button>
-            <button class="aba-btn" data-reino="julia">
-                🪷 <span>Julia</span>
-            </button>
-            <button class="aba-btn" data-reino="otavio">
-                🌅 <span>Otávio</span>
-            </button>
-        </nav>
+        <div class="conteudo-aba visivel" id="prologo">
 
-        <main class="container">
+            <div class="bloco-texto">
 
-            <section class="conteudo-aba visivel" id="prologo">
-                <div class="reino-caixa prologo">
-                    <div class="reino-cabecalho">
-                        <h2 class="reino-nome">Prólogo</h2>
-                        <p class="reino-lugar">🏔️ Reino das Montanhas Geladas</p>
-                        <p class="reino-tema">Da Virtude e do Caminho Reto</p>
-                    </div>
+                <h2>Mil Universos Sob o Mesmo Céu</h2>
 
-                    <div class="topicos">
+                <p>
+                    Cada pessoa carrega consigo um universo de pensamentos,
+                    experiências, sentimentos e histórias. Muitas vezes, basta
+                    uma palavra, uma imagem ou uma história para descobrirmos
+                    algo novo sobre nós mesmos e sobre o mundo ao nosso redor.
+                </p>
 
-                        <div class="topico sem-imagem">
-                            <div class="topico-texto">
-                                <span class="topico-num">01.</span>
-                                <strong>Mil Universos Sob o Mesmo Céu</strong>
-                                <br><br>
-                                Cada pessoa carrega consigo um universo de pensamentos,
-                                experiências, sentimentos e histórias. Muitas vezes, basta
-                                uma palavra, uma imagem ou uma história para descobrirmos
-                                algo novo sobre nós mesmos e sobre o mundo ao nosso redor.
-                                <br><br>
-                                A Filosofia nos convida a questionar, enquanto a Literatura
-                                nos permite transformar essas questões em palavras,
-                                personagens, histórias e diferentes formas de enxergar a vida.
-                                <br><br>
-                                Foi a partir desse encontro que nasceu este projeto:
-                                cinco olhares diferentes, cinco formas de criar e interpretar,
-                                reunidas sob o mesmo céu.
-                                <br><br>
-                                Cada voz carrega uma história.
-                                <br>
-                                Cada história, um universo.
-                            </div>
-                        </div>
+                <p>
+                    A Filosofia nos convida a questionar, enquanto a Literatura
+                    nos permite transformar essas questões em palavras,
+                    personagens, histórias e diferentes formas de enxergar a vida.
+                </p>
 
-                        <div class="topico sem-imagem">
-                            <div class="topico-texto">
-                                <span class="topico-num">02.</span>
-                                🌕 <strong>Emily</strong> — Reino das Estrelas Distantes:
-                                verdade, introspecção e conhecimento.
-                                <br><br>
-                                🌌 <strong>Pamela</strong> — Reino da Esperança:
-                                mesmo quando o caminho é incerto, a esperança guia os passos.
-                                <br><br>
-                                🌸 <strong>Jéssica</strong> — Reino da Alegria e do Afeto:
-                                leveza, bondade e carinho em cada gesto.
-                                <br><br>
-                                🪷 <strong>Julia</strong> — Reino da Harmonia:
-                                natureza, beleza e equilíbrio entre todas as coisas.
-                                <br><br>
-                                🌅 <strong>Otávio</strong> — Reino do Tempo e do Vento:
-                                observador, sereno, que flui com a vida.
-                            </div>
-                        </div>
+                <p>
+                    Foi a partir desse encontro que nasceu este projeto:
+                    cinco olhares diferentes, cinco formas de criar e interpretar,
+                    reunidas sob o mesmo céu.
+                </p>
 
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">03.</span>
-                                A firmeza de ânimo é mais forte que a rocha.
-                            </div>
-                        </div>
+                <p>
+                    <em>
+                        Cada voz carrega uma história.<br>
+                        Cada história, um universo.
+                    </em>
+                </p>
 
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">04.</span>
-                                Não há escada para as estrelas senão a da perseverança.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">05.</span>
-                                Quem desce ao vale perde a vista do horizonte.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">06.</span>
-                                O frio fortalece o corpo; a adversidade, a alma.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">07.</span>
-                                Cada passo em falso ensina mais que cem passos certos.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1455156218388-5e61b110d20e?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">08.</span>
-                                A paciência escala montanhas que a pressa jamais verá.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1463436005319-54e1ce0e79a6?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">09.</span>
-                                Quem carrega apenas o necessário caminha mais longe.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1483728642387-6c3bdd6a9b9a?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">10.</span>
-                                A altura revela o quanto ainda há por subir.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">11.</span>
-                                As raízes mais profundas resistem às maiores tempestades.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">12.</span>
-                                Não se julga o montanhista pelo início, mas pelo cume.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1446329815452-189f729e607b?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">13.</span>
-                                O silêncio das alturas traz sabedoria que o vale desconhece.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1472214103337-72093381262c?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">14.</span>
-                                Quem se curva ao medo jamais verá o sol nascer do alto.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">15.</span>
-                                A retidão é o melhor apoio nas encostas mais perigosas.
-                            </div>
-                        </div>
-
-                    </div>
+                <div class="citacao">
+                    "A firmeza de ânimo é mais forte que a rocha."
                 </div>
-            </section>
 
-            <section class="conteudo-aba" id="emily">
-                <div class="reino-caixa emily">
-                    <div class="reino-cabecalho">
-                        <h2 class="reino-nome">Emily</h2>
-                        <p class="reino-lugar">🌕 Reino das Estrelas Distantes</p>
-                        <p class="reino-tema">Da Verdade Oculta e do Saber</p>
-                    </div>
+            </div>
 
-                    <div class="topicos">
 
-                        <!-- 01 -->
-                        <div class="topico">
-                            <div class="topico-img imagem-emily"
-                                style="background-image:url('https://i.imgur.com/cRq8dQY.png')"
-                                alt="Anjo da Curiosidade">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">01.</span>
-                                <strong>🪽 O Anjo da Curiosidade</strong>
-                                <br><br>
-                                Representa o jeito curioso, intenso e observador.
-                                O livro simboliza a vontade de aprender, a chave é a
-                                busca por respostas, a lua é o lado introspectivo e
-                                a borboleta representa mudanças e recomeços.
-                            </div>
-                        </div>
+            <div class="galeria">
 
-                        <!-- 02 -->
-                        <div class="topico">
-                            <div class="topico-img imagem-emily"
-                                style="background-image:url('https://i.imgur.com/6Lb4FzY.png')"
-                                alt="Mesmo quebrada, ainda posso criar">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">02.</span>
-                                <strong>Mesmo quebrada, ainda posso criar.</strong>
-                                <br><br>
-                                O crescimento vive nas rachaduras. Nem tudo que se
-                                quebra precisa ser perdido. Algumas partes de nós
-                                precisam se transformar para que uma nova versão
-                                possa nascer.
-                            </div>
-                        </div>
-
-                        <!-- 03 -->
-                        <div class="topico">
-                            <div class="topico-img imagem-emily"
-                                style="background-image:url('https://i.imgur.com/OsZ1wP7.png')"
-                                alt="Colagem de símbolos e introspecção">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">03.</span>
-                                <strong>Uma nova linha pode começar.</strong>
-                                <br><br>
-                                O que quebra também pode recomeçar. Não é o fim.
-                                É uma nova oportunidade de escrever, criar e continuar.
-                            </div>
-                        </div>
-
-                        <!-- 04 -->
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">04.</span>
-                                Quem busca com sinceridade encontrará, antes ou depois.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">05.</span>
-                                A sabedoria não se rouba, se conquista com tempo e humildade.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1504567961542-e24d9439a724?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">06.</span>
-                                Há verdades que só se revelam à luz das estrelas.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">07.</span>
-                                Quem nada questiona nada aprende.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">08.</span>
-                                O saber é infinito; quanto mais se sabe,
-                                mais se descobre que nada se sabe.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1520034475321-536038c636b8?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">09.</span>
-                                A humildade é a chave que abre as portas do conhecimento.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80')">
-                            </div>
-                            <div class="topico-texto">
-                                <span class="topico-num">10.</span>
-                                A verdade pode demorar, mas nunca se esconde para sempre.
-                            </div>
-                        </div>
-
-                        <div class="topico">
-                            <div class="topico-img"
-                                style="background-image:url('https://images.unsplash.com/photo-1507003211
-                        </div>
-                    </div>
+                <div class="item-imagem">
+                    <img src="prologo_1.jpg" alt="">
+                    <div class="legenda"></div>
                 </div>
-            </section>
-        </main>
 
-        <footer>
-            <p>Mil Universos Sob o Mesmo Céu.</p>
-        </footer>
+                <div class="item-imagem">
+                    <img src="prologo_2.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
 
-    </div>
+                <div class="item-imagem">
+                    <img src="prologo_3.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
 
-    <button class="btn-topo" id="btnTopo" aria-label="Voltar ao topo">↑</button>
+            </div>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- EMILY -->
+        <!-- ============================= -->
+
+        <div class="conteudo-aba" id="emily">
+
+            <div class="bloco-texto">
+
+                <h2>🌕 Emily</h2>
+
+                <p>
+                    Um reino guiado pela verdade, pela introspecção e pelo
+                    conhecimento. Aqui, cada pensamento é uma estrela distante
+                    a ser compreendida. Olhar para dentro é também enxergar o
+                    infinito. Buscar a verdade é o caminho, e o conhecimento
+                    é a luz que nunca se apaga.
+                </p>
+
+                <div class="citacao">
+                    "A firmeza de ânimo é mais forte que a rocha."
+                </div>
+
+            </div>
+
+
+            <div class="galeria">
+
+                <div class="item-imagem">
+                    <img src="emily_1.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+                <div class="item-imagem">
+                    <img src="emily_2.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+                <div class="item-imagem">
+                    <img src="emily_3.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- PAMELA -->
+        <!-- ============================= -->
+
+        <div class="conteudo-aba" id="pamela">
+
+            <div class="bloco-texto">
+
+                <h2>🌌 Pamela</h2>
+
+                <p>
+                    Mesmo quando o caminho é incerto, a esperança guia os passos.
+                    Como estrelas que brilham na escuridão, ela nos lembra que
+                    sempre há uma luz ao fim do caminho. Não importa o quão
+                    escuro seja o momento: a esperança transforma o caminho
+                    e nos faz seguir adiante.
+                </p>
+
+                <div class="citacao">
+                    "A firmeza de ânimo é mais forte que a rocha."
+                </div>
+
+            </div>
+
+
+            <div class="galeria">
+
+                <div class="item-imagem">
+                    <img src="pamela_1.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+                <div class="item-imagem">
+                    <img src="pamela_2.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+                <div class="item-imagem">
+                    <img src="pamela_3.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- JÉSSICA -->
+        <!-- ============================= -->
+
+        <div class="conteudo-aba" id="jessica">
+
+            <div class="bloco-texto">
+
+                <h2>🌸 Jéssica</h2>
+
+                <p>
+                    Leveza, bondade e carinho em cada gesto. Um reino onde o
+                    coração é o guia, e cada palavra traz calor e afeto.
+                    A alegria não é apenas sentimento — é forma de ver o mundo,
+                    de cuidar e de espalhar beleza por onde se passa.
+                </p>
+
+                <div class="citacao">
+                    "A firmeza de ânimo é mais forte que a rocha."
+                </div>
+
+            </div>
+
+
+            <div class="bloco-video">
+
+                <video controls poster="capa_jessica.jpg">
+
+                    <source
+                        src="video_jessica.mp4"
+                        type="video/mp4"
+                    >
+
+                </video>
+
+            </div>
+
+
+            <div class="galeria">
+
+                <div class="item-imagem">
+                    <img src="jessica_1.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+                <div class="item-imagem">
+                    <img src="jessica_2.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+                <div class="item-imagem">
+                    <img src="jessica_3.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- JULIA -->
+        <!-- ============================= -->
+
+        <div class="conteudo-aba" id="julia">
+
+            <div class="bloco-texto">
+
+                <h2>🪷 Julia</h2>
+
+                <p>
+                    Natureza, beleza e equilíbrio entre todas as coisas. Aqui,
+                    tudo se conecta: terra, água, ar, fogo e espírito.
+                    A harmonia não é apenas calma — é o encontro perfeito
+                    entre cada parte, onde cada elemento tem seu lugar
+                    e sua beleza.
+                </p>
+
+                <div class="citacao">
+                    "A firmeza de ânimo é mais forte que a rocha."
+                </div>
+
+            </div>
+
+
+            <div class="galeria">
+
+                <div class="item-imagem">
+                    <img src="julia_1.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+                <div class="item-imagem">
+                    <img src="julia_2.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+                <div class="item-imagem">
+                    <img src="julia_3.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- OTÁVIO -->
+        <!-- ============================= -->
+
+        <div class="conteudo-aba" id="otavio">
+
+            <div class="bloco-texto">
+
+                <h2>🌅 Otávio</h2>
+
+                <p>
+                    Observador, sereno, que flui com a vida. Como o vento
+                    que não se vê mas se sente, e como o tempo que passa
+                    e ensina. Não corre, não se apressa — apenas flui,
+                    compreende e deixa que cada coisa aconteça no seu
+                    momento certo.
+                </p>
+
+                <div class="citacao">
+                    "A firmeza de ânimo é mais forte que a rocha."
+                </div>
+
+            </div>
+
+
+            <div class="galeria">
+
+                <div class="item-imagem">
+                    <img src="otavio_1.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+                <div class="item-imagem">
+                    <img src="otavio_2.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+                <div class="item-imagem">
+                    <img src="otavio_3.jpg" alt="">
+                    <div class="legenda"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTÃO VOLTAR -->
+
+        <div class="voltar">
+
+            <button class="btn-voltar" onclick="voltar()">
+                ← Voltar
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
+
 </body>
 </html>
