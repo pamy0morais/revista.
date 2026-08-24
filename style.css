@@ -758,7 +758,7 @@ footer {
 
     height: 200px;
 
-    flex-shrink: 0;
+    flex-shrink: 5;
 
     border-radius: 12px;
 
@@ -801,9 +801,9 @@ footer {
 
 .imagem-emily {
 
-    width: 260px;
+    width: 300px;
 
-    height: 200px;
+    height: 280px;
 
     background-position: center;
 
